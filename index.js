@@ -11,7 +11,6 @@ app.get('/',(req, res) => {
     res.sendFile('./static/index.html',{
         root: __dirname
     })
-
 })
 app.get('/contactenos.html',(req, res) => {
     res.sendFile('./static/contactenos.html',{
@@ -20,6 +19,19 @@ app.get('/contactenos.html',(req, res) => {
 
 })
 
+//nosotros.html
+app.get('/nosotros',(req, res) => {
+    res.sendFile('./static/nosotros.html',{
+        root: __dirname
+    })
+})
+
+app.get('/login',(req, res) => {
+    res.sendFile('./static/Login.html',{
+        root: __dirname
+    })
+
+})
 //404 error
 app.use((req, res) => {
     res.status(404).send('Página no encontrada 🤔')
