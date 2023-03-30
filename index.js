@@ -20,6 +20,12 @@ app.get('/nosotros',(req, res) => {
     })
 })
 
+app.get('/login',(req, res) => {
+    res.sendFile('./static/Login.html',{
+        root: __dirname
+    })
+
+})
 //404 error
 app.use((req, res) => {
     res.status(404).send('Página no encontrada 🤔')
