@@ -11,7 +11,13 @@ app.get('/',(req, res) => {
     res.sendFile('./static/index.html',{
         root: __dirname
     })
+})
 
+//nosotros.html
+app.get('/nosotros',(req, res) => {
+    res.sendFile('./static/nosotros.html',{
+        root: __dirname
+    })
 })
 
 app.get('/login',(req, res) => {
