@@ -13,6 +13,12 @@ app.get('/',(req, res) => {
     })
 
 })
+app.get('/contactenos.html',(req, res) => {
+    res.sendFile('./static/contactenos.html',{
+        root: __dirname
+    })
+
+})
 
 //404 error
 app.use((req, res) => {
